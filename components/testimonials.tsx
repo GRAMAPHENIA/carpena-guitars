@@ -35,7 +35,7 @@ export default function Testimonials() {
           ))}
         </div>
         <div className="flex justify-center mt-10">
-          <a href="#testimonios-todos">
+          <a href="/testimonios-todos">
             <button className="px-6 py-2 bg-primary text-white rounded shadow hover:bg-primary/80 transition">Saber más</button>
           </a>
         </div>
