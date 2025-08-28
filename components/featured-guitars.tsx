@@ -15,8 +15,12 @@ export default function FeaturedGuitars() {
           </div>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-          {featuredGuitars.slice(0, 4).map((guitar) => (
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          {[
+            featuredGuitars.find(g => g.id === "fenix-6-custom"),
+            featuredGuitars.find(g => g.id === "fenix-7-custom"),
+            featuredGuitars.find(g => g.id === "det-guitar-6")
+          ].filter(Boolean).map((guitar) => (
             <Link href={guitar.href} key={guitar.id} className="group">
               <Card className="overflow-hidden h-full transition-all duration-300 hover:shadow-lg">
                 <div className="relative h-64 overflow-hidden">
