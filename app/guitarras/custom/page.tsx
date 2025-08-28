@@ -61,7 +61,7 @@ export default function GuitarCustomPage() {
         </div>
       </div>
 
-      <Tabs defaultValue="process" className="mb-16">
+      {/* <Tabs defaultValue="process" className="mb-16">
         <TabsList className="grid w-full grid-cols-3 mb-8">
           <TabsTrigger value="process">Proceso</TabsTrigger>
           <TabsTrigger value="options">Opciones</TabsTrigger>
@@ -608,7 +608,7 @@ export default function GuitarCustomPage() {
             </div>
           </div>
         </TabsContent>
-      </Tabs>
+      </Tabs> */}
 
       <div className="bg-primary text-primary-foreground rounded-lg p-8 md:p-12">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">

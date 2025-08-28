@@ -13,7 +13,7 @@ export default function Home() {
       {/* Hero Section */}
       <section
         className="relative w-full flex items-center justify-center overflow-hidden pt-0 md:pt-6 md:px-2"
-        style={{ height: "100vh" }}
+        // style={{ height: "100vh" }}
       >
         <div className="w-full max-w-7xl mx-auto h-full relative">
           <Image
@@ -22,14 +22,14 @@ export default function Home() {
             priority
             width={1600}
             height={700}
-            className="object-cover w-full h-[90vh] sm:h-[75vh] md:h-[80vh] shadow-xl brightness-105 md:rounded-2xl"
+            className="object-cover w-full h-[90vh] sm:h-[75vh] md:h-[70vh] shadow-xl  md:rounded-2xl"
             style={{ objectPosition: "center" }}
           />
           {/* Overlay oscuro con blur sobre la imagen */}
-          <div className="absolute top-0 left-0 w-full h-[90vh] sm:h-[75vh] md:h-[80vh] bg-neutral-900/60 backdrop-blur-[3px] z-10 md:rounded-2xl" />
+          <div className="absolute top-0 left-0 w-full h-[90vh] sm:h-[75vh] md:h-[70vh] bg-neutral-900/60 backdrop-blur-[3px] z-10 md:rounded-2xl" />
           <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-4 md:px-6 z-20 h-full">
             <div className="bg-transparent max-w-2xl w-full mx-auto">
-              <h1 className="text-4xl md:text-8xl font-bold text-white mb-20 drop-shadow-lg">
+              <h1 className="text-4xl md:text-8xl font-bold text-white mb-8 drop-shadow-lg">
                 CARPENA GUITARS
               </h1>
               <p className="text-xl md:text-2xl text-white/90 max-w-3xl mb-8 drop-shadow">

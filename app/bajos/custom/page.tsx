@@ -55,7 +55,7 @@ export default function BassCustomPage() {
           <Image src="/placeholder.svg?height=800&width=600" alt="Bajo personalizado" fill className="object-cover" />
         </div>
       </div>
-
+{/* 
       <Tabs defaultValue="process" className="mb-16">
         <TabsList className="grid w-full grid-cols-3 mb-8">
           <TabsTrigger value="process">Proceso</TabsTrigger>
@@ -596,7 +596,7 @@ export default function BassCustomPage() {
             </div>
           </div>
         </TabsContent>
-      </Tabs>
+      </Tabs> */}
 
       <div className="bg-primary text-primary-foreground rounded-lg p-8 md:p-12">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">

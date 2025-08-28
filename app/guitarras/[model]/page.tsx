@@ -32,24 +32,26 @@ export async function generateStaticParams() {
   return paths
 }
 
-export function generateMetadata({ params }: Props): Metadata {
-  const modelName = getModelName(params.model)
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { model } = await params;
+  const modelName = getModelName(model);
 
   if (!modelName) {
     return {
       title: "Modelo no encontrado",
       description: "El modelo que estás buscando no existe o ha sido eliminado.",
-    }
+    };
   }
 
   return {
     title: `Guitarras ${modelName} | Modelos de 6, 7 y 8 cuerdas`,
     description: `Explora nuestra colección de guitarras ${modelName}. Modelos de 6, 7 y 8 cuerdas con diseños únicos y sonidos excepcionales.`,
-  }
+  };
 }
 
-export default function GuitarModelPage({ params }: Props) {
-  const modelName = getModelName(params.model)
+export default async function GuitarModelPage({ params }: Props) {
+  const { model } = await params;
+  const modelName = getModelName(model);
 
   if (!modelName) {
     return (
@@ -84,21 +86,21 @@ export default function GuitarModelPage({ params }: Props) {
           </Button>
         </div>
       </div>
-    )
+    );
   }
 
   // Obtener guitarras del modelo
-  const modelGuitars = featuredGuitars.filter((guitar) => guitar.href.includes(`/guitarras/${params.model}`))
+  const modelGuitars = featuredGuitars.filter((guitar) => guitar.href.includes(`/guitarras/${model}`));
 
   if (modelGuitars.length === 0) {
-    notFound()
+    notFound();
   }
 
   // Obtener descripción del modelo
-  const modelDescription = getModelDescription(params.model)
+  const modelDescription = getModelDescription(model);
 
   // Obtener características del modelo
-  const modelFeatures = getModelFeatures(params.model)
+  const modelFeatures = getModelFeatures(model);
 
   return (
     <div className="container mx-auto py-12 px-4 md:px-6">

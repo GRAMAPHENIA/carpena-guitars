@@ -31,24 +31,26 @@ export async function generateStaticParams() {
   return paths
 }
 
-export function generateMetadata({ params }: Props): Metadata {
-  const guitar = getGuitar(params.model, params.type)
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { model, type } = params;
+  const guitar = getGuitar(model, type);
 
   if (!guitar) {
     return {
       title: "Guitarra no encontrada",
       description: "La guitarra que estás buscando no existe o ha sido eliminada.",
-    }
+    };
   }
 
   return {
-    title: `${guitar.name} | Guitarras ${params.model.charAt(0).toUpperCase() + params.model.slice(1)}`,
+    title: `${guitar.name} | Guitarras ${model.charAt(0).toUpperCase() + model.slice(1)}`,
     description: guitar.description,
-  }
+  };
 }
 
-export default function GuitarDetailPage({ params }: Props) {
-  const guitar = getGuitar(params.model, params.type)
+export default async function GuitarDetailPage({ params }: Props) {
+  const { model, type } = params;
+  const guitar = getGuitar(model, type);
 
   if (!guitar) {
     return (

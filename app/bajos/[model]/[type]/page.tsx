@@ -27,24 +27,26 @@ export async function generateStaticParams() {
   })
 }
 
-export function generateMetadata({ params }: Props): Metadata {
-  const bass = getBass(params.model, params.type)
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { model, type } = params;
+  const bass = getBass(model, type);
 
   if (!bass) {
     return {
       title: "Bajo no encontrado",
       description: "El bajo que estás buscando no existe o ha sido eliminado.",
-    }
+    };
   }
 
   return {
-    title: `${bass.name} | Bajos ${params.model.charAt(0).toUpperCase() + params.model.slice(1)}`,
+    title: `${bass.name} | Bajos ${model.charAt(0).toUpperCase() + model.slice(1)}`,
     description: bass.description,
-  }
+  };
 }
 
-export default function BassDetailPage({ params }: Props) {
-  const bass = getBass(params.model, params.type)
+export default async function BassDetailPage({ params }: Props) {
+  const { model, type } = params;
+  const bass = getBass(model, type);
 
   if (!bass) {
     return (
