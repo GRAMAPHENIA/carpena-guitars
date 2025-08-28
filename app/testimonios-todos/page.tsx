@@ -3,17 +3,16 @@ import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 import { testimonials } from "@/data/testimonials"
 import { Quote } from "lucide-react"
 
-export default function Testimonials() {
+export default function TestimoniosTodos() {
   return (
     <section className="py-16 md:py-24 px-4 md:px-6">
       <div className="container mx-auto">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">Lo que dicen los músicos</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4">Testimonios de músicos</h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-            Ejemplos de comentarios de músicos profesionales sobre nuestros instrumentos.
+            Ejemplo de comentarios sobre nuestros instrumentos.
           </p>
         </div>
-
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {testimonials.slice(0, 3).map((testimonial) => (
             <Card key={testimonial.id} className="h-full transition-shadow duration-200 hover:shadow-2xl">
@@ -33,11 +32,6 @@ export default function Testimonials() {
               </CardContent>
             </Card>
           ))}
-        </div>
-        <div className="flex justify-center mt-10">
-          <a href="#testimonios-todos">
-            <button className="px-6 py-2 bg-primary text-white rounded shadow hover:bg-primary/80 transition">Saber más</button>
-          </a>
         </div>
       </div>
     </section>

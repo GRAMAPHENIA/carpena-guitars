@@ -6,16 +6,13 @@ import { featuredGuitars } from "@/data/guitars"
 
 export default function FeaturedGuitars() {
   return (
-    <section className="py-16 md:py-24 px-1 md:px-6">
+    <section className="py-0 md:py-24 px-0 md:px-6">
       <div className="container mx-auto">
         <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-12">
           <div>
             <h2 className="text-3xl md:text-4xl font-bold mb-2">Instrumentos Destacados</h2>
             <p className="text-lg text-muted-foreground">Descubre nuestros modelos más populares</p>
           </div>
-          <Link href="/guitarras" className="mt-4 md:mt-0 text-primary font-medium hover:underline">
-            Ver todos los modelos
-          </Link>
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">

@@ -12,7 +12,7 @@ export const testimonials: Testimonial[] = [
     name: "Chowy Fernandez",
     title: "Guitarrista - Barro",
     quote:
-      "Después de probar muchas marcas, encontré en estas guitarras el sonido y la comodidad que siempre busqué. La calidad de construcción y la atención al detalle son incomparables.",
+      "El producto cumple con las especificaciones técnicas indicadas. Calidad funcional y entrega correcta.",
     avatar: "/placeholder.svg?height=100&width=100",
   },
   {
@@ -20,7 +20,7 @@ export const testimonials: Testimonial[] = [
     name: "Rod Zamora",
     title: "Guitarrista - Los Turkos",
     quote:
-      "Mi Det Guitar 7 ha sido mi compañera en innumerables conciertos y sesiones de grabación. Su versatilidad y estabilidad son excepcionales, incluso en las condiciones más exigentes.",
+      "La compra se realizó de manera sencilla y rápida. El instrumento funciona según lo esperado.",
     avatar: "/placeholder.svg?height=100&width=100",
   },
   {
@@ -28,7 +28,7 @@ export const testimonials: Testimonial[] = [
     name: "Juani de Abreu",
     title: "Guitarrista - Plan 4",
     quote:
-      "La precisión y el detalle en la construcción de mi Divell 7 son impresionantes. El sonido es exactamente lo que necesitaba para mi banda, potente y definido en todas las frecuencias.",
+      "El servicio fue correcto y el producto recibido es funcional. Satisfecho con la experiencia general.",
     avatar: "/placeholder.svg?height=100&width=100",
   },
   {

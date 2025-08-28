@@ -164,7 +164,7 @@ export default function Footer() {
           <p className="text-sm text-muted-foreground">
             &copy; {new Date().getFullYear()} Carpena Guitars. Todos los derechos reservados.
           </p>
-    <span className="absolute right-2 -bottom-6 text-xs text-muted-foreground opacity-70">v1.0.0</span>
+  <span className="absolute right-2 -bottom-6 text-xs text-muted-foreground opacity-70">v1.1.0</span>
           <div className="flex space-x-4 mt-4 md:mt-0">
             <Link
               href="/privacidad"
