@@ -18,7 +18,7 @@ export default function GuitarrasPage() {
       <div className="text-center mb-12">
         <h1 className="text-4xl md:text-5xl font-bold mb-4">Nuestras Guitarras</h1>
         <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-          Guitarras únicas, hechas para ti.
+          Guitarras únicas, hechas para vos.
         </p>
       </div>
 
@@ -97,15 +97,15 @@ export default function GuitarrasPage() {
                   <span>Acabados a elección</span>
                 </li>
               </ul>
-              <div className="flex gap-4">
-                <Button asChild>
-                  <Link href="/guitarras/fenix/6-cuerdas">6 Cuerdas</Link>
+              <div className="flex gap-2">
+                <Button variant="outline" asChild>
+                  <Link className="text-xs" href="/guitarras/fenix/6-cuerdas">6 Cuerdas</Link>
                 </Button>
-                <Button asChild>
-                  <Link href="/guitarras/fenix/7-cuerdas">7 Cuerdas</Link>
+                <Button variant="outline" asChild>
+                  <Link className="text-xs" href="/guitarras/fenix/7-cuerdas">7 Cuerdas</Link>
                 </Button>
-                <Button asChild>
-                  <Link href="/guitarras/fenix/8-cuerdas">8 Cuerdas</Link>
+                <Button variant="outline" asChild>
+                  <Link className="text-xs" href="/guitarras/fenix/8-cuerdas">8 Cuerdas</Link>
                 </Button>
               </div>
             </div>
@@ -166,14 +166,14 @@ export default function GuitarrasPage() {
                 </li>
               </ul>
               <div className="flex gap-4">
-                <Button asChild>
-                  <Link href="/guitarras/det-guitar/6-cuerdas">6 Cuerdas</Link>
+                <Button variant="outline" asChild>
+                  <Link className="text-xs" href="/guitarras/det-guitar/6-cuerdas">6 Cuerdas</Link>
                 </Button>
-                <Button asChild>
-                  <Link href="/guitarras/det-guitar/7-cuerdas">7 Cuerdas</Link>
+                <Button variant="outline" asChild>
+                  <Link className="text-xs" href="/guitarras/det-guitar/7-cuerdas">7 Cuerdas</Link>
                 </Button>
-                <Button asChild>
-                  <Link href="/guitarras/det-guitar/8-cuerdas">8 Cuerdas</Link>
+                <Button variant="outline" asChild>
+                  <Link className="text-xs" href="/guitarras/det-guitar/8-cuerdas">8 Cuerdas</Link>
                 </Button>
               </div>
             </div>
@@ -221,11 +221,11 @@ export default function GuitarrasPage() {
                   Elegantes y claras. Gran presencia.
                 </p>
               <div className="flex gap-4">
-                <Button asChild>
-                  <Link href="/guitarras/valkiria/6-cuerdas">6 Cuerdas</Link>
+                <Button variant="outline" asChild>
+                  <Link className="text-xs" href="/guitarras/valkiria/6-cuerdas">6 Cuerdas</Link>
                 </Button>
-                <Button asChild>
-                  <Link href="/guitarras/valkiria/7-cuerdas">7 Cuerdas</Link>
+                <Button variant="outline" asChild>
+                  <Link className="text-xs" href="/guitarras/valkiria/7-cuerdas">7 Cuerdas</Link>
                 </Button>
               </div>
             </div>
@@ -266,11 +266,11 @@ export default function GuitarrasPage() {
                   Agresivas y definidas. Para metal.
                 </p>
               <div className="flex gap-4">
-                <Button asChild>
-                  <Link href="/guitarras/divell/6-cuerdas">6 Cuerdas</Link>
+                <Button variant="outline" asChild>
+                  <Link className="text-xs" href="/guitarras/divell/6-cuerdas">6 Cuerdas</Link>
                 </Button>
-                <Button asChild>
-                  <Link href="/guitarras/divell/7-cuerdas">7 Cuerdas</Link>
+                <Button variant="outline" asChild>
+                  <Link className="text-xs" href="/guitarras/divell/7-cuerdas">7 Cuerdas</Link>
                 </Button>
               </div>
             </div>

@@ -74,11 +74,11 @@ export default function BajosPage() {
                 bajo JDA ofrece un equilibrio perfecto entre comodidad y rendimiento.
               </p>
               <div className="flex gap-4">
-                <Button asChild>
-                  <Link href="/bajos/jda/4-cuerdas">4 Cuerdas</Link>
+                <Button variant="outline" asChild>
+                  <Link className="text-xs" href="/bajos/jda/4-cuerdas">4 Cuerdas</Link>
                 </Button>
-                <Button asChild>
-                  <Link href="/bajos/jda/5-cuerdas">5 Cuerdas</Link>
+                <Button variant="outline" asChild>
+                  <Link className="text-xs" href="/bajos/jda/5-cuerdas">5 Cuerdas</Link>
                 </Button>
               </div>
             </div>
@@ -114,14 +114,14 @@ export default function BajosPage() {
                 bajistas que buscan potencia y claridad en cualquier contexto.
               </p>
               <div className="flex gap-4">
-                <Button asChild>
-                  <Link href="/bajos/explosion/4-cuerdas">4 Cuerdas</Link>
+                <Button variant="outline" asChild>
+                  <Link className="text-xs" href="/bajos/explosion/4-cuerdas">4 Cuerdas</Link>
                 </Button>
-                <Button asChild>
-                  <Link href="/bajos/explosion/5-cuerdas">5 Cuerdas</Link>
+                <Button variant="outline" asChild>
+                  <Link className="text-xs" href="/bajos/explosion/5-cuerdas">5 Cuerdas</Link>
                 </Button>
-                <Button asChild>
-                  <Link href="/bajos/explosion/6-cuerdas">6 Cuerdas</Link>
+                <Button variant="outline" asChild>
+                  <Link className="text-xs" href="/bajos/explosion/6-cuerdas">6 Cuerdas</Link>
                 </Button>
               </div>
             </div>
@@ -165,11 +165,11 @@ export default function BajosPage() {
                 requieren versatilidad y precisión.
               </p>
               <div className="flex gap-4">
-                <Button asChild>
-                  <Link href="/bajos/stinker/4-cuerdas">4 Cuerdas</Link>
+                <Button variant="outline" asChild>
+                  <Link className="text-xs" href="/bajos/stinker/4-cuerdas">4 Cuerdas</Link>
                 </Button>
-                <Button asChild>
-                  <Link href="/bajos/stinker/5-cuerdas">5 Cuerdas</Link>
+                <Button variant="outline" asChild>
+                  <Link className="text-xs" href="/bajos/stinker/5-cuerdas">5 Cuerdas</Link>
                 </Button>
               </div>
             </div>

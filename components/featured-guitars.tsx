@@ -6,7 +6,7 @@ import { featuredGuitars } from "@/data/guitars"
 
 export default function FeaturedGuitars() {
   return (
-    <section className="py-0 md:py-24 px-0 md:px-6">
+    <section className="pt-10 md:py-24 px-0 md:px-6">
       <div className="container mx-auto">
         <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-12">
           <div>

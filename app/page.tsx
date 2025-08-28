@@ -52,10 +52,9 @@ export default function Home() {
           </div>
         </div>
       </section>
-
-      {/*
-      Featured Categories
-  <section className="py-16 md:py-24 px-2 md:px-6 bg-muted">
+      {/* 
+      Featured Categories */}
+      {/* <section className="py-16 md:py-24 px-2 md:px-6 bg-muted">
         <div className="container mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">Nuestras Colecciones</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -114,8 +113,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </section>
-      */}
+      </section> */}
 
       {/* Featured Guitars */}
       <FeaturedGuitars />

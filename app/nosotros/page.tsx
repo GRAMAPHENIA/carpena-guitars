@@ -1,19 +1,21 @@
-import type { Metadata } from "next"
-import Image from "next/image"
-import Link from "next/link"
-import { Button } from "@/components/ui/button"
+import type { Metadata } from "next";
+import Image from "next/image";
+import Link from "next/link";
+import { Button } from "@/components/ui/button";
 
 export const metadata: Metadata = {
   title: "Nosotros | Nuestra Historia y Filosofía",
   description:
     "Conoce nuestra historia, filosofía y el equipo detrás de nuestras guitarras y bajos personalizados de alta calidad.",
-}
+};
 
 export default function NosotrosPage() {
   return (
     <div className="container mx-auto py-12 px-4 md:px-6">
       <div className="text-center mb-12">
-        <h1 className="text-4xl md:text-5xl font-bold mb-4">Nuestra Historia</h1>
+        <h1 className="text-4xl md:text-5xl font-bold mb-4">
+          Nuestra Historia
+        </h1>
         <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
           Pasión por la música desde 2005
         </p>
@@ -21,28 +23,38 @@ export default function NosotrosPage() {
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center mb-16">
         <div className="relative h-[400px] rounded-lg overflow-hidden">
-          <Image src="/placeholder.svg?height=800&width=600" alt="Nuestro taller" fill className="object-cover" />
+          <Image
+            src="/placeholder.svg?height=800&width=600"
+            alt="Nuestro taller"
+            fill
+            className="object-cover"
+          />
         </div>
         <div>
           <h2 className="text-3xl font-bold mb-6">En Los Inicios</h2>
           <p className="text-lg text-muted-foreground mb-4">
-            Todo comenzó en un pequeño taller en Buenos Aires, con la pasión de un luthier por crear instrumentos que
-            combinaran la tradición con innovaciones modernas. Lo que empezó como un proyecto personal
-            pronto se convirtió en una marca reconocida por músicos profesionales.
+            Todo comenzó en un pequeño taller en Buenos Aires, con la pasión de
+            un luthier por crear instrumentos que combinaran la tradición con
+            innovaciones modernas. Lo que empezó como un proyecto personal
+            pronto se convirtió en una marca reconocida por músicos
+            profesionales.
           </p>
           <p className="text-lg text-muted-foreground mb-4">
-            Desde nuestros humildes comienzos, nos hemos dedicado a perfeccionar cada aspecto de nuestros instrumentos,
-            desde la selección de maderas hasta el acabado final, siempre con un objetivo claro: crear instrumentos que
-            inspiren a los músicos a alcanzar nuevas alturas creativas.
+            Desde nuestros humildes comienzos, nos hemos dedicado a perfeccionar
+            cada aspecto de nuestros instrumentos, desde la selección de maderas
+            hasta el acabado final, siempre con un objetivo claro: crear
+            instrumentos que inspiren a los músicos a alcanzar nuevas alturas
+            creativas.
           </p>
           <p className="text-lg text-muted-foreground">
-            Hoy, nuestro equipo de luthiers expertos continúa esa tradición, combinando técnicas especializadas con
-            tecnología de vanguardia para crear instrumentos de clase mundial.
+            Hoy, nuestro equipo de luthiers expertos continúa esa tradición,
+            combinando técnicas especializadas con tecnología de vanguardia para
+            crear instrumentos de clase mundial.
           </p>
         </div>
       </div>
-
-      <div className="bg-muted rounded-lg p-8 md:p-12 mb-16">
+      {/* seccion filosofia comentada de momento */}
+      {/* <div className="bg-muted rounded-lg p-8 md:p-12 mb-16">
         <div className="text-center mb-8">
           <h2 className="text-3xl font-bold mb-4">La Filosofía</h2>
           <p className="text-lg max-w-3xl mx-auto">
@@ -84,13 +96,15 @@ export default function NosotrosPage() {
             </p>
           </div>
         </div>
-      </div>
+      </div> */}
 
-      <div className="mb-16">
+      {/* Seccion Procesos comentada de momento*/}
+      {/* <div className="mb-16">
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold mb-4">Los Procesos</h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-            Cada instrumento que creamos pasa por un meticuloso proceso de construcción
+            Cada instrumento que creamos pasa por un meticuloso proceso de
+            construcción
           </p>
         </div>
 
@@ -101,10 +115,13 @@ export default function NosotrosPage() {
                 <span className="text-primary text-xl font-bold">1</span>
               </div>
               <div>
-                <h3 className="text-xl font-bold mb-2">Diseño y Planificación</h3>
+                <h3 className="text-xl font-bold mb-2">
+                  Diseño y Planificación
+                </h3>
                 <p className="text-muted-foreground">
-                  Trabajamos estrechamente con el músico para entender sus necesidades y preferencias, creando un diseño
-                  personalizado que cumpla con sus expectativas.
+                  Trabajamos estrechamente con el músico para entender sus
+                  necesidades y preferencias, creando un diseño personalizado
+                  que cumpla con sus expectativas.
                 </p>
               </div>
             </div>
@@ -114,10 +131,13 @@ export default function NosotrosPage() {
                 <span className="text-primary text-xl font-bold">2</span>
               </div>
               <div>
-                <h3 className="text-xl font-bold mb-2">Selección de Materiales</h3>
+                <h3 className="text-xl font-bold mb-2">
+                  Selección de Materiales
+                </h3>
                 <p className="text-muted-foreground">
-                  Seleccionamos cuidadosamente cada pieza de madera y componente, asegurando que cumplan con nuestros
-                  estrictos estándares de calidad.
+                  Seleccionamos cuidadosamente cada pieza de madera y
+                  componente, asegurando que cumplan con nuestros estrictos
+                  estándares de calidad.
                 </p>
               </div>
             </div>
@@ -127,10 +147,13 @@ export default function NosotrosPage() {
                 <span className="text-primary text-xl font-bold">3</span>
               </div>
               <div>
-                <h3 className="text-xl font-bold mb-2">Construcción Especializada</h3>
+                <h3 className="text-xl font-bold mb-2">
+                  Construcción Especializada
+                </h3>
                 <p className="text-muted-foreground">
-                  Nuestros luthiers expertos trabajan meticulosamente en cada detalle, combinando técnicas tradicionales
-                  con tecnología moderna.
+                  Nuestros luthiers expertos trabajan meticulosamente en cada
+                  detalle, combinando técnicas tradicionales con tecnología
+                  moderna.
                 </p>
               </div>
             </div>
@@ -142,8 +165,9 @@ export default function NosotrosPage() {
               <div>
                 <h3 className="text-xl font-bold mb-2">Acabado y Detallado</h3>
                 <p className="text-muted-foreground">
-                  Aplicamos múltiples capas de acabado y realizamos un detallado minucioso para lograr un instrumento
-                  visualmente impresionante.
+                  Aplicamos múltiples capas de acabado y realizamos un detallado
+                  minucioso para lograr un instrumento visualmente
+                  impresionante.
                 </p>
               </div>
             </div>
@@ -153,10 +177,13 @@ export default function NosotrosPage() {
                 <span className="text-primary text-xl font-bold">5</span>
               </div>
               <div>
-                <h3 className="text-xl font-bold mb-2">Configuración y Prueba</h3>
+                <h3 className="text-xl font-bold mb-2">
+                  Configuración y Prueba
+                </h3>
                 <p className="text-muted-foreground">
-                  Configuramos y ajustamos cada instrumento para garantizar un rendimiento óptimo, realizando pruebas
-                  exhaustivas antes de la entrega.
+                  Configuramos y ajustamos cada instrumento para garantizar un
+                  rendimiento óptimo, realizando pruebas exhaustivas antes de la
+                  entrega.
                 </p>
               </div>
             </div>
@@ -197,9 +224,9 @@ export default function NosotrosPage() {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
 
-      <div className="mb-16">
+      <div className="py-20">
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold mb-4">Nuestro Equipo</h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
@@ -207,7 +234,7 @@ export default function NosotrosPage() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
           <div className="text-center">
             <div className="relative w-48 h-48 mx-auto rounded-full overflow-hidden mb-4">
               <Image
@@ -218,9 +245,11 @@ export default function NosotrosPage() {
               />
             </div>
             <h3 className="text-xl font-bold mb-1">Nombre Completo</h3>
-            <p className="text-muted-foreground mb-2">Especialidad, area, titulos, etc...</p>
+            <p className="text-muted-foreground mb-2">
+              Especialidad, area, titulos, etc...
+            </p>
             <p className="text-sm">
-             Experiencia de vida, logros y contribuciones, etc... 
+              Experiencia de vida, logros y contribuciones, etc...
             </p>
           </div>
 
@@ -234,13 +263,15 @@ export default function NosotrosPage() {
               />
             </div>
             <h3 className="text-xl font-bold mb-1">Nombre Completo</h3>
-            <p className="text-muted-foreground mb-2">Especialidad, area, titulos, etc...</p>
+            <p className="text-muted-foreground mb-2">
+              Especialidad, area, titulos, etc...
+            </p>
             <p className="text-sm">
-             Experiencia de vida, logros y contribuciones, etc... 
+              Experiencia de vida, logros y contribuciones, etc...
             </p>
           </div>
 
-          <div className="text-center">
+          {/* <div className="text-center">
             <div className="relative w-48 h-48 mx-auto rounded-full overflow-hidden mb-4">
               <Image
                 src="/placeholder.svg?height=200&width=200"
@@ -250,21 +281,26 @@ export default function NosotrosPage() {
               />
             </div>
             <h3 className="text-xl font-bold mb-1">Nombre Completo</h3>
-            <p className="text-muted-foreground mb-2">Especialidad, area, titulos, etc...</p>
-            <p className="text-sm">
-             Experiencia de vida, logros y contribuciones, etc... 
+            <p className="text-muted-foreground mb-2">
+              Especialidad, area, titulos, etc...
             </p>
-          </div>
+            <p className="text-sm">
+              Experiencia de vida, logros y contribuciones, etc...
+            </p>
+          </div> */}
         </div>
       </div>
 
       <div className="bg-primary text-primary-foreground rounded-lg p-8 md:p-12">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
           <div>
-            <h2 className="text-3xl font-bold mb-4">¿Interesado en Nuestros Instrumentos?</h2>
+            <h2 className="text-3xl font-bold mb-4">
+              ¿Interesado en Nuestros Instrumentos?
+            </h2>
             <p className="text-lg mb-6 text-primary-foreground/90">
-              Contacta con nosotros para obtener más información sobre nuestras guitarras y bajos. Nuestro equipo estará
-              encantado de asesorarte y responder a todas tus preguntas.
+              Contacta con nosotros para obtener más información sobre nuestras
+              guitarras y bajos. Nuestro equipo estará encantado de asesorarte y
+              responder a todas tus preguntas.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Button asChild variant="secondary" size="lg">
@@ -273,10 +309,15 @@ export default function NosotrosPage() {
             </div>
           </div>
           <div className="relative h-[300px] rounded-lg overflow-hidden">
-            <Image src="/placeholder.svg?height=600&width=800" alt="Taller de luthería" fill className="object-cover" />
+            <Image
+              src="/placeholder.svg?height=600&width=800"
+              alt="Taller de luthería"
+              fill
+              className="object-cover"
+            />
           </div>
         </div>
       </div>
     </div>
-  )
+  );
 }

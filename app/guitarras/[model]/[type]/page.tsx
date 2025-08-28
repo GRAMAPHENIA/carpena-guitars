@@ -32,7 +32,8 @@ export async function generateStaticParams() {
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const { model, type } = params;
+  const awaitedParams = await params;
+  const { model, type } = awaitedParams;
   const guitar = getGuitar(model, type);
 
   if (!guitar) {
@@ -49,7 +50,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 }
 
 export default async function GuitarDetailPage({ params }: Props) {
-  const { model, type } = params;
+  const awaitedParams = await params;
+  const { model, type } = awaitedParams;
   const guitar = getGuitar(model, type);
 
   if (!guitar) {
@@ -96,7 +98,7 @@ export default async function GuitarDetailPage({ params }: Props) {
 
   // Obtener guitarras relacionadas (mismo modelo, diferente tipo)
   const relatedGuitars = featuredGuitars
-    .filter((g) => g.href.includes(`/guitarras/${params.model}`) && g.href !== guitar.href)
+    .filter((g) => g.href.includes(`/guitarras/${awaitedParams.model}`) && g.href !== guitar.href)
     .slice(0, 3)
 
   return (
@@ -110,8 +112,8 @@ export default async function GuitarDetailPage({ params }: Props) {
           Guitarras
         </Link>
         <ChevronRight className="h-4 w-4" />
-        <Link href={`/guitarras/${params.model}`} className="hover:text-foreground capitalize">
-          {params.model}
+        <Link href={`/guitarras/${awaitedParams.model}`} className="hover:text-foreground capitalize">
+          {awaitedParams.model}
         </Link>
         <ChevronRight className="h-4 w-4" />
         <span className="text-foreground">{guitar.name}</span>
