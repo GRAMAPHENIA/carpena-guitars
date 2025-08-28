@@ -20,34 +20,36 @@ export default function FeaturedGuitars() {
             featuredGuitars.find(g => g.id === "fenix-6-custom"),
             featuredGuitars.find(g => g.id === "fenix-7-custom"),
             featuredGuitars.find(g => g.id === "det-guitar-6")
-          ].filter(Boolean).map((guitar) => (
-            <Link href={guitar.href} key={guitar.id} className="group">
-              <Card className="overflow-hidden h-full transition-all duration-300 hover:shadow-lg">
-                <div className="relative h-64 overflow-hidden">
-                  <Image
-                    src={guitar.image || "/placeholder.svg"}
-                    alt={guitar.name}
-                    fill
-                    className="object-cover transition-transform duration-500 group-hover:scale-105"
-                  />
-                  {guitar.isNew && (
-                    <Badge className="absolute top-2 right-2 bg-primary text-primary-foreground">Nuevo</Badge>
-                  )}
-                </div>
-                <CardContent className="p-4">
-                  <div className="text-sm text-muted-foreground mb-1">{guitar.category}</div>
-                  <h3 className="font-bold text-lg mb-2 group-hover:text-primary transition-colors">{guitar.name}</h3>
-                  <p className="text-muted-foreground line-clamp-2 mb-4">{guitar.description}</p>
-                  <div className="flex justify-between items-center">
-                    <div className="text-sm">
-                      <span className="font-medium">Cuerdas:</span> {guitar.strings}
-                    </div>
-                    <div className="text-primary font-bold">{guitar.price}</div>
+          ].filter(Boolean).map((guitar) =>
+            guitar ? (
+              <Link href={guitar.href} key={guitar.id} className="group">
+                <Card className="overflow-hidden h-full transition-all duration-300 hover:shadow-lg">
+                  <div className="relative h-64 overflow-hidden">
+                    <Image
+                      src={guitar.image || "/placeholder.svg"}
+                      alt={guitar.name}
+                      fill
+                      className="object-cover transition-transform duration-500 group-hover:scale-105"
+                    />
+                    {guitar.isNew && (
+                      <Badge className="absolute top-2 right-2 bg-primary text-primary-foreground">Nuevo</Badge>
+                    )}
                   </div>
-                </CardContent>
-              </Card>
-            </Link>
-          ))}
+                  <CardContent className="p-4">
+                    <div className="text-sm text-muted-foreground mb-1">{guitar.category}</div>
+                    <h3 className="font-bold text-lg mb-2 group-hover:text-primary transition-colors">{guitar.name}</h3>
+                    <p className="text-muted-foreground line-clamp-2 mb-4">{guitar.description}</p>
+                    <div className="flex justify-between items-center">
+                      <div className="text-sm">
+                        <span className="font-medium">Cuerdas:</span> {guitar.strings}
+                      </div>
+                      <div className="text-primary font-bold">{guitar.price}</div>
+                    </div>
+                  </CardContent>
+                </Card>
+              </Link>
+            ) : null
+          )}
         </div>
         <div className="flex justify-center mt-8">
           <Link href="/guitarras">
