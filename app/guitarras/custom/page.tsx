@@ -37,7 +37,7 @@ export default function GuitarCustomPage() {
 
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-16">
         <div className="order-2 lg:order-1">
-          <h2 className="text-3xl font-bold mb-6">Tu Visión, Nuestra Artesanía</h2>
+    <h2 className="text-3xl font-bold mb-6">Tu Visión, Nuestra Experiencia</h2>
           <p className="text-lg text-muted-foreground mb-6">
             Nuestro proceso de personalización te permite crear un instrumento único que refleje tu estilo y cumpla con
             tus necesidades específicas. Trabajamos contigo en cada paso del proceso para asegurar que el resultado
@@ -117,7 +117,7 @@ export default function GuitarCustomPage() {
                   <span className="text-primary text-xl font-bold">4</span>
                 </div>
                 <div>
-                  <h3 className="text-xl font-bold mb-2">Construcción Artesanal</h3>
+                  <h3 className="text-xl font-bold mb-2">Construcción</h3>
                   <p className="text-muted-foreground">
                     Nuestros luthiers expertos construyen tu guitarra a mano, prestando atención a cada detalle para
                     garantizar un instrumento excepcional.

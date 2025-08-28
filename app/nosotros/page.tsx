@@ -15,7 +15,7 @@ export default function NosotrosPage() {
       <div className="text-center mb-12">
         <h1 className="text-4xl md:text-5xl font-bold mb-4">Nuestra Historia</h1>
         <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-          Pasión por la música y la artesanía desde 2005
+          Pasión por la música desde 2005
         </p>
       </div>
 
@@ -27,7 +27,7 @@ export default function NosotrosPage() {
           <h2 className="text-3xl font-bold mb-6">En Los Inicios</h2>
           <p className="text-lg text-muted-foreground mb-4">
             Todo comenzó en un pequeño taller en Buenos Aires, con la pasión de un luthier por crear instrumentos que
-            combinaran la artesanía tradicional con innovaciones modernas. Lo que empezó como un proyecto personal
+            combinaran la tradición con innovaciones modernas. Lo que empezó como un proyecto personal
             pronto se convirtió en una marca reconocida por músicos profesionales.
           </p>
           <p className="text-lg text-muted-foreground mb-4">
@@ -36,7 +36,7 @@ export default function NosotrosPage() {
             inspiren a los músicos a alcanzar nuevas alturas creativas.
           </p>
           <p className="text-lg text-muted-foreground">
-            Hoy, nuestro equipo de luthiers expertos continúa esa tradición, combinando técnicas artesanales con
+            Hoy, nuestro equipo de luthiers expertos continúa esa tradición, combinando técnicas especializadas con
             tecnología de vanguardia para crear instrumentos de clase mundial.
           </p>
         </div>
@@ -90,7 +90,7 @@ export default function NosotrosPage() {
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold mb-4">Los Procesos</h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-            Cada instrumento que creamos pasa por un meticuloso proceso artesanal
+            Cada instrumento que creamos pasa por un meticuloso proceso de construcción
           </p>
         </div>
 
@@ -127,7 +127,7 @@ export default function NosotrosPage() {
                 <span className="text-primary text-xl font-bold">3</span>
               </div>
               <div>
-                <h3 className="text-xl font-bold mb-2">Construcción Artesanal</h3>
+                <h3 className="text-xl font-bold mb-2">Construcción Especializada</h3>
                 <p className="text-muted-foreground">
                   Nuestros luthiers expertos trabajan meticulosamente en cada detalle, combinando técnicas tradicionales
                   con tecnología moderna.
@@ -182,7 +182,7 @@ export default function NosotrosPage() {
             <div className="relative h-[200px] rounded-lg overflow-hidden">
               <Image
                 src="/placeholder.svg?height=400&width=300"
-                alt="Construcción artesanal"
+                alt="Construcción especializada"
                 fill
                 className="object-cover"
               />

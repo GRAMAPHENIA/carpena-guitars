@@ -9,10 +9,22 @@ export default function Footer() {
       <div className="container mx-auto px-4 md:px-6 py-12">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div className="space-y-4">
-            <Link href="/" className="flex items-center space-x-2">
-              {/* <Guitar className="h-6 w-6" /> */}
-              <span className="font-bold text-xl">Carpena Guitars</span>
+            <Link href="/" className="flex items-center gap-2">
+              <img
+                src="/logo-light.webp"
+                alt="Logo Carpena Guitars Light"
+                className="h-8 w-auto md:h-10 block dark:hidden"
+                style={{ maxWidth: '120px', objectFit: 'contain' }}
+              />
+              <img
+                src="/logo-dark.webp"
+                alt="Logo Carpena Guitars Dark"
+                className="h-8 w-auto md:h-10 hidden dark:block"
+                style={{ maxWidth: '120px', objectFit: 'contain' }}
+              />
+              {/* <span className="font-bold text-xl">Carpena Guitars</span> */}
             </Link>
+            {/* ...logo y demás contenido... */}
             <p className="text-muted-foreground">
               Fabricantes de guitarras y bajos personalizados, de alta calidad,
               desde
@@ -148,11 +160,11 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="border-t mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
+    <div className="border-t mt-12 pt-8 flex flex-col md:flex-row justify-between items-center relative">
           <p className="text-sm text-muted-foreground">
-            &copy; {new Date().getFullYear()} Carpena Guitars. Todos los derechos
-            reservados.
+            &copy; {new Date().getFullYear()} Carpena Guitars. Todos los derechos reservados.
           </p>
+    <span className="absolute right-2 -bottom-6 text-xs text-muted-foreground opacity-70">v1.0.0</span>
           <div className="flex space-x-4 mt-4 md:mt-0">
             <Link
               href="/privacidad"

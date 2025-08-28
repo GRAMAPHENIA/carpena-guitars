@@ -6,7 +6,7 @@ import { featuredGuitars } from "@/data/guitars"
 
 export default function FeaturedGuitars() {
   return (
-    <section className="py-16 md:py-24 px-4 md:px-6">
+    <section className="py-16 md:py-24 px-1 md:px-6">
       <div className="container mx-auto">
         <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-12">
           <div>
@@ -19,7 +19,7 @@ export default function FeaturedGuitars() {
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-          {featuredGuitars.map((guitar) => (
+          {featuredGuitars.slice(0, 4).map((guitar) => (
             <Link href={guitar.href} key={guitar.id} className="group">
               <Card className="overflow-hidden h-full transition-all duration-300 hover:shadow-lg">
                 <div className="relative h-64 overflow-hidden">
@@ -47,6 +47,13 @@ export default function FeaturedGuitars() {
               </Card>
             </Link>
           ))}
+        </div>
+        <div className="flex justify-center mt-8">
+          <Link href="/guitarras">
+            <button className="px-6 py-3 rounded-lg bg-primary text-primary-foreground font-semibold shadow hover:bg-primary/90 transition-colors">
+              Ver más instrumentos
+            </button>
+          </Link>
         </div>
       </div>
     </section>

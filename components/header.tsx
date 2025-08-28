@@ -105,14 +105,24 @@ export default function Header() {
     <header
       className={cn(
         "sticky top-0 z-50 w-full transition-all duration-200",
-        isScrolled
-          ? "bg-background/95 backdrop-blur-md shadow-sm"
-          : "bg-transparent"
+        isScrolled ? "shadow-lg" : "",
+        "bg-background text-foreground dark:text-white"
       )}
     >
       <div className="container mx-auto flex h-16 items-center justify-between px-4 md:px-6">
-        <Link href="/" className="flex items-center">
-          <span className="font-bold text-xl">Carpena Guitars</span>
+        <Link href="/" className="flex items-center gap-2">
+          <img
+            src="/logo-light.webp"
+            alt="Logo Carpena Guitars Light"
+            className="h-8 w-auto md:h-10 block dark:hidden"
+            style={{ maxWidth: '120px', objectFit: 'contain' }}
+          />
+          <img
+            src="/logo-dark.webp"
+            alt="Logo Carpena Guitars Dark"
+            className="h-8 w-auto md:h-10 hidden dark:block"
+            style={{ maxWidth: '120px', objectFit: 'contain' }}
+          />
         </Link>
 
         <div className="flex items-center gap-2">
@@ -125,7 +135,7 @@ export default function Header() {
                     size="icon"
                     className="flex items-center justify-center"
                   >
-                    <Menu className="h-6 w-6" />
+                    <Menu className="h-6 w-6 text-black dark:text-white" />
                     <span className="sr-only">Abrir menú</span>
                   </Button>
                 </SheetTrigger>
@@ -182,6 +192,10 @@ export default function Header() {
                     >
                       Contacto
                     </Link>
+                    <hr className="my-4 border " />
+                    <div className="flex justify-end">
+                      <ThemeToggle />
+                    </div>
                   </nav>
                 </SheetContent>
               </Sheet>
@@ -251,7 +265,8 @@ export default function Header() {
               </NavigationMenuList>
             </NavigationMenu>
           )}
-          <ThemeToggle />
+          {/* Solo mostrar ThemeToggle en desktop, no en mobile */}
+          {!isMobile && <ThemeToggle />}
         </div>
       </div>
     </header>
@@ -302,7 +317,7 @@ function MobileAccordion({
         className="flex w-full items-center justify-between px-4 py-2 font-medium"
       >
         {title}
-        {isOpen ? <X className="h-4 w-4" /> : <Menu className="h-4 w-4" />}
+  {isOpen ? <X className="h-4 w-4 text-black dark:text-white" /> : <Menu className="h-4 w-4 text-black dark:text-white" />}
       </button>
       {isOpen && (
         <div className="px-4 py-2 space-y-2">

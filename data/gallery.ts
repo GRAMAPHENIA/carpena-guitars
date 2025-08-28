@@ -76,6 +76,6 @@ export const galleryImages: GalleryImage[] = [
     thumbnail: "/placeholder.svg?height=400&width=400",
     fullSize: "/placeholder.svg?height=1200&width=800",
     alt: "Proceso de Fabricación",
-    description: "Proceso artesanal de fabricación de nuestras guitarras",
+  description: "Proceso de fabricación de nuestras guitarras",
   },
 ]
