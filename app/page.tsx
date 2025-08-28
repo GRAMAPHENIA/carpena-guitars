@@ -12,21 +12,21 @@ export default function Home() {
     <div className="flex flex-col">
       {/* Hero Section */}
       <section
-        className="relative w-full flex items-center justify-center overflow-hidden pt-0 md:pt-6 px-2"
+        className="relative w-full flex items-center justify-center overflow-hidden pt-0 md:pt-6 md:px-2"
         style={{ height: "100vh" }}
       >
-        <div className="w-full max-w-7xl mx-auto h-full relative p-0">
+        <div className="w-full max-w-7xl mx-auto h-full relative">
           <Image
             src="/header/header-image.webp"
             alt="Hero Carpena Guitars"
             priority
             width={1600}
             height={700}
-            className="object-cover w-full h-[90vh] sm:h-[75vh] md:h-[80vh] rounded-2xl shadow-xl saturate-150 brightness-105"
+            className="object-cover w-full h-[90vh] sm:h-[75vh] md:h-[80vh] shadow-xl brightness-105 md:rounded-2xl"
             style={{ objectPosition: "center" }}
           />
           {/* Overlay oscuro con blur sobre la imagen */}
-          <div className="absolute top-0 left-0 w-full h-[90vh] sm:h-[75vh] md:h-[80vh] rounded-2xl bg-black/60 backdrop-blur-[3px] z-10" />
+          <div className="absolute top-0 left-0 w-full h-[90vh] sm:h-[75vh] md:h-[80vh] bg-neutral-900/60 backdrop-blur-[3px] z-10 md:rounded-2xl" />
           <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-4 md:px-6 z-20 h-full">
             <div className="bg-transparent max-w-2xl w-full mx-auto">
               <h1 className="text-4xl md:text-8xl font-bold text-white mb-20 drop-shadow-lg">
