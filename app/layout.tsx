@@ -42,10 +42,11 @@ export default function RootLayout({
       <head>
         <meta property="og:title" content="Guitarras y Bajos Personalizados | Instrumentos de Alta Calidad" />
         <meta property="og:description" content="Fabricantes de guitarras y bajos personalizados de alta calidad. Modelos Fenix, Det Guitar, Valkiria, Divell, JDA, Explosion y Stinker." />
-        <meta property="og:image" content="/social-media-logo.jpg" />
+        <meta property="og:image" content="https://carpena-guitars.vercel.app/social-media-logo.jpg" />
         <meta property="og:type" content="website" />
         <meta property="og:locale" content="es_ES" />
         <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="@carpena_guitars" />
         <meta name="twitter:title" content="Guitarras y Bajos Personalizados | Instrumentos de Alta Calidad" />
         <meta name="twitter:description" content="Fabricantes de guitarras y bajos personalizados de alta calidad. Modelos Fenix, Det Guitar, Valkiria, Divell, JDA, Explosion y Stinker." />
         <meta name="twitter:image" content="/social-media-logo.jpg" />
